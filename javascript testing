@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="no"> 
+<head>
+
+<script>
+	function KnappeTrykk {
+		
+	}
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+		<title>JavaScript testing</title>
+			
+</head>
+<body>
+<button type="button"> Aktiver JavaScript </button> 
+</body>
+</html>

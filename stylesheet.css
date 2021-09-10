@@ -1,0 +1,70 @@
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+  position: absolute;
+  left: 85px;
+  top: 60px;
+}
+div.bilde {
+	visibility: hidden;
+	
+	left: 0px;
+	width: 400px;
+	height: 2px;
+}
+div.faen{
+	border-style: dotted;
+	margin: 5px;
+	padding: 19px;
+	color: red;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	
+}
+div1 {
+	border-style: dotted;
+	margin: 5px;
+	padding: 15px;
+	color: red;
+	position: relative;
+	
+	left: 4%;
+	
+}
+div.mor {
+	top: 1px;
+	background-color: red;
+	position:relative;
+	width: 400px;
+	height: 222px;
+}
+div.datter {
+
+	top:100%;
+	background-color: red;
+	position:relative;
+	
+	width: 400px;
+	height: 222px;
+}
+div.bakgrunnSkifter {
+	position:absolute;
+	left:400px;
+	border-style: dotted;
+	width: 400px;
+	height: 221px;
+}
+div.bakgrunnHover {
+	position: relative;
+	width: 20%;
+	height: 20%;
+	background-color: blue;
+	left: 20%;
+	
+}

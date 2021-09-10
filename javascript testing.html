@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="no"> 
+<head>
+
+<script>
+	function KnappeTrykk() {
+		document.getElementById("tekstfelt1div").innerText = document.getElementById("in_1").value
+		document.getElementById("in_1").value = ""
+	}
+	function refresh() {
+		location.reload();
+	}
+	function vis(x) {
+		
+		document.getElementById(x).style.visibility = "visible";
+	}
+	function skift() {
+	// var farge = document.getElementById("test").style.backgroundColor;
+	// if (farge == "lightgrey") {
+	document.body.style.backgroundColor ="blue";
+	document.getElementById("test").style.backgroundColor = "lightgrey";
+	// } else if (farge == "blue" ){
+	// document.body.style.backgroundColor ="lightgrey";
+	// document.getElementById("test").style.backgroundColor = "blue";
+	// }
+	}
+</script>
+
+<link rel="stylesheet" href="stylesheet.css">
+<meta charset="utf-8"/>
+		<title>JavaScript testing</title>
+			
+</head>
+<body>
+<div class="bakgrunnSkifter"> 
+	<div class="bakgrunnHover" id="test" onmouseover="skift()">
+	</div>
+</div>
+<div class="mor" onmouseover="vis('bildediv')">
+<div class="bilde" id = "bildediv">
+	
+	<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif"  width="400px" height="221.5px"  alt="faen" />
+</div>
+
+<div class="datter" onmouseenter="vis('vid1')" >
+<div class="bilde" id = "vid1">
+<video height="221.5px" width="400px" controls  src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" > </video>
+</div>
+</div>
+<div class="datter" onmouseup="vis('vid2')" >
+<div class="bilde" id = "vid2">
+<video height="221.5px" width="400px" controls  src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" > </video>
+</div>
+</div>
+<div class="datter" onmouseleave="vis('vid3')" >
+<div class="bilde" id = "vid3">
+<video height="221.5px" width="400px" controls  src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" > </video>
+</div>
+</div>
+
+</div>
+
+<div class="faen">
+<input id="in_1"> </input>
+<button id ="knapp1" onclick="KnappeTrykk()"> Aktiver JavaScript </button> 
+
+
+<div1>
+<button id = "knapp2" onclick="refresh()"> Refresh siden </button>
+
+</div1>
+<p id = "tekstfelt1div"> Denne teksten skal endre seg! </p>
+</div>
+
+</body>
+</html>
